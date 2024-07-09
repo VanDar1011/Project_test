@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root">
+        <div class="container">
+            <div class="header">
+                <img src="./assets/images/images-removebg-preview.png" alt="" height="100px" width="100px">
+                <div class="content-header">Bảng giá xăng dầu</div>
+            </div>
+            <div class="main">
+                <div class="information-gas col-5">
+                    <div class="title title-infomation-gas">
+                        Thông tin giá xăng dầu
+                    </div>
+                    <div class="detail-infomaton-gas"></div>
+                </div>
+                <div class="detail-products col-7 p-2">
+                    <div class="timer-system p-1">
+                        <h2 class="title title-timer">Thời gian hệ thống</h2>
+                        <div class="timer"></div>
+                    </div>
+                    <div class="update-price p-1">
+                        <h2 class="title title-set-price">Cài đặt thông tin giá</h2>
+                        <div class="set-price">
+                            <select name="mode" class="set-mode-update-price" id="">
+                                <option value="1">Cập nhật tự động</option>
+                                <option value="2">Cập nhật thủ công</option>
+                            </select>
+                            <button class="btn-set-price text-blue">Cài đặt thông tin giá xăng dầu</button>
+                        </div>
+                    </div>
+                    <div class="send-script-to-led p">
+                        <h2 class="title title-set-information">Gửi lệnh xuống bảng led</h2>
+                        <h3 class="my-2">Chọn cổng giao tiếp</h3>
+                        <div class="choice-com-communicate">
+                            <select name="choice-com" class="col-6" id="choice-com">
+                                <option value="1">COM 1</option>
+                                <option value="2">COM 2</option>
+                                <option value="3">COM 3</option>
+                            </select>
+                            <div class="status-led col-6">
+                            </div>
+                        </div>
+                        <div class="group-btn my-2">
+                            <button class="find-com text-blue">Tìm cổng</button>
+                            <button class="text-blue btn-connect">Kết nối</button></button>
+                        </div>
+                        <button class="update-led text-blue">
+                            Cập nhật lệnh xuống bẳng led
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/style.js"></script>
+</body>
+
+</html>
